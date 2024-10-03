@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url('../img/8.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Century Gothic', sans-serif;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.7); /* Fondo oscuro con transparencia */
+    z-index: -1;
+}
+
+h1 {
+    text-align: center;
+    font-size: 58px;
+    margin-bottom: 32px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #000;
+    position: relative;
+    z-index: 2;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.table {
+    width: 300px;
+    background: rgba(255, 255, 255, 0.85); /* Fondo blanco con transparencia */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra suave */
+    text-align: center;
+    color: #000;
+    position: relative;
+    z-index: 2;
+    transition: transform 0.3s ease-in-out;
+}
+
+.table:hover {
+    transform: scale(1.05);
+}
+
+.table img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.table h2 {
+    font-size: 26px;
+    margin-bottom: 10px;
+    color: #c606ff;
+}
+
+.table h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.table sup {
+    font-size: 24px;
+    color: #c606ff;
+}
+
+.table p {
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.boton {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #c606ff;
+    color: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 15px;
+    transition: background 0.3s ease-in-out;
+}
+
+.boton:hover {
+    background: #000;
+}
